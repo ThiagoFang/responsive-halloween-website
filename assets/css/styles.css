@@ -256,12 +256,14 @@ img {
   top: -1rem;
   left: -1.5rem;
   transform: rotate(-15deg);
+  animation: animate-star-1 5s infinite ease-in-out;
 }
 
 .home__title-img-2 {
   bottom: 2.75rem;
   right: -1.5rem;
   transform: rotate(15deg);
+  animation: animate-star-2 5s infinite ease-in-out;
 }
 
 .home__description {
@@ -290,7 +292,27 @@ img {
 }
 
 /* Star animation */
+@keyframes animate-star-1 {
+  0%, 100% {
+    transform: scale(.7) rotate(-15deg);
+    opacity: .2;
+  }
+  50% {
+    transform: scale(1) rotate(-15deg);
+    opacity: 1;
+  }
+}
 
+@keyframes animate-star-2 {
+  0%, 100% {
+    transform: scale(1) rotate(15deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(.7) rotate(15deg);
+    opacity: .2;
+  }
+}
 
 
 /*=============== BUTTON ===============*/
