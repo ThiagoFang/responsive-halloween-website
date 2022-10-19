@@ -316,7 +316,20 @@ img {
 
 
 /*=============== BUTTON ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--white-color);
+  padding: 1rem 1.5rem;
+  border-radius: 4rem;
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  transition: background .3s ease-in-out, color .3s ease-in-out;
+}
 
+.button:hover {
+  background-color: var(--first-color);
+  color: white;
+}
 
 /*=============== CATEGORY ===============*/
 
