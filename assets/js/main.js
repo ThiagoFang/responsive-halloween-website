@@ -46,7 +46,7 @@ const scrollActive = () =>{
 			  sectionTop = current.offsetTop - 58,
 			  sectionId = current.getAttribute('id'),
 			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
-
+  
 		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
 			sectionsClass.classList.add('active-link')
 		}else{
@@ -58,6 +58,11 @@ window.addEventListener('scroll', scrollActive)
 
 
 /*=============== SHOW SCROLL UP ===============*/ 
+const scrollUp = () => {
+  const scrollUp = document.getElementById('scroll-up');
+  this.scrollY >= 350 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll');
+};
+window.addEventListener('scroll', scrollUp)
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
