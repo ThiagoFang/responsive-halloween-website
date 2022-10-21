@@ -258,10 +258,6 @@ img {
   position: relative;
 }
 
-.home__container {
-  padding-left: 3.5rem;
-}
-
 .home__data {
   text-align: center;
 }
@@ -750,7 +746,35 @@ font-size: 1.25rem;
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
 
+  .home__title {
+    font-size: 1.5rem;
+  }
+
+  .home__tree-1 {
+    left: -4rem;
+  }
+
+  .home__tree-2 {
+    right: -4rem;
+  }
+
+  .items__container {
+    grid-template-columns: 180px;
+  }
+
+  .party__img {
+    width: 200px;
+  }
+
+  .footer__content {
+    gap: 2.5rem;
+  }
+}
 
 /* For medium devices */
 
