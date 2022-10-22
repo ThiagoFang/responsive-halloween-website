@@ -777,7 +777,27 @@ font-size: 1.25rem;
 }
 
 /* For medium devices */
+@media screen and (min-width: 576px) {
+  .home__container,
+  .about__container,
+  .party__container {
+    grid-template-columns: .6fr;
+    justify-content: center;
+  }
 
+  .home__tree-1,
+  .home__tree-2 {
+    width: 200px;
+  }
+
+  .items__container {
+    grid-template-columns: repeat(2, 200px);
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(3, max-content);
+  }
+}
 
 /* For large devices */
 
